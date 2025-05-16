@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourislo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/GeminiStyle.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto mt-8 p-4">
+        <h1 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Tourislo</h1>
+        <div id="chat-window">
+            </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Enter your query (e.g., 'beaches in Bali')" class="focus:ring-2 focus:border-blue-500">
+            <button id="send-button">Send</button>
+        </div>
+        <div id="results-container" class="hidden">
+            <h2 id="results-title">Recommended Spots</h2>
+            <div id="results-content">
+                </div>
+        </div>
+    </div>
+    <script src="/static/GeminiChat.js"></script>
+</body>
+</html>
